@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 문서에 대한 정보 저장 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 시작하기(브라우저 제목표시줄)</title>
+    
+    <!--디자인-->
+    <style type="text/css">
+        #txt {color :red}
+    </style>
+
+    <!--동적처리-->
+    <script type="text/javascript">
+        window.onload=function(){
+            var txt = document.getElementById("txt");   //변수선언
+            txt.onclick = function(){
+                alert("확인");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- HTML:5 :: 국제 표준 html버전, 화면의 구성(HTML)과 꾸미는 것(CSS), 동적처리(JS=Jquery)를 분리  -->
+    <!-- UI : 브라우저(클라이언트)에서 실행되는 프로그래밍 웹 언어-->
+    <div id="txt">웹 표준을 따르는 구조</div> <!-- id = 속성값 -->
+
+
+</body>
+</html>
